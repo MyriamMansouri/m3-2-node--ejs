@@ -35,7 +35,7 @@ ol, ul { margin-bottom: 1em; }
     flex: 0 0 49%;
     margin-bottom: 24px;
     min-height: 200px;
-    padding: 18px;
+    padding: 25px;
 }
 
 .sample {
@@ -74,7 +74,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     text-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    animation: error-anim 10s linear infinite;
+    animation: error-anim 8s linear infinite;
 
 }
 
@@ -87,12 +87,12 @@ a:hover {
         text-shadow: 0 0 30px rgba(0, 0, 0, .3);
     }
     33% {
-        opacity:0.5;
+        opacity:0.4;
         text-shadow: 0 0 10px rgba(0, 0, 0, .5);
     }
     66% {
         opacity: .1;
-        text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+        text-shadow: 0 0 20px rgba(0, 0, 0, 1);
     }
     100% {
         opacity:0.9;
