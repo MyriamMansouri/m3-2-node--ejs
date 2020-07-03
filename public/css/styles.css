@@ -54,7 +54,7 @@ a {
     position: relative;
 }
 
-a::before {
+.nav a::before {
     content:"⚡";
     position: absolute;
     left:-23px;
@@ -64,8 +64,40 @@ a:hover {
     color: #0074D9;
 }
 
-a:hover::before {
+.nav a:hover::before {
     display: inline-block;
+}
+
+.error {
+    display: flex;
+    flex-flow: column  nowrap;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    animation: error-anim 10s linear infinite;
+
+}
+
+.error h2 {
+    font-size:200px;
+}
+@keyframes  error-anim {
+    0% {
+        opacity:0.9;
+        text-shadow: 0 0 30px rgba(0, 0, 0, .3);
+    }
+    33% {
+        opacity:0.5;
+        text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    }
+    66% {
+        opacity: .1;
+        text-shadow: 0 0 20px rgba(0, 0, 0, .8);
+    }
+    100% {
+        opacity:0.9;
+        text-shadow: 0 0 40px rgba(0, 0, 0, .3);
+    }
 }
 
 @media screen and (min-width: 900px) {
