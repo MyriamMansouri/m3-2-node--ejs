@@ -14,6 +14,11 @@
       <div class="box answer">
         <h3>Answer</h3>
         <!-- render answer here -->
+        <img src = <%- homer.imageUrl  %> >
+        <% Object.values(homer).forEach(value => { %>
+          <p><%- value %></p>
+          <% }); %>
+        </p>
       </div>
     </div>
   </div>
