@@ -34,7 +34,7 @@ const q3 = (req, res) => {
     favoriteBeverage: "Duff Beer",
   };
 
-  res.render("pages/question3", {homer});
+  res.render("pages/question3", { homer });
 };
 
 // -----------------------------------------------
@@ -42,8 +42,8 @@ const q3 = (req, res) => {
 // -----------------------------------------------
 const q4 = (req, res) => {
   const popularGirlNames = ["Olivia", "Ruby", "Emily", "Grace", "Jessica"];
-
-  res.render("pages/question4");
+  const top3Names = popularGirlNames.slice(0, 3);
+  res.render("pages/question4", { top3Names });
 };
 
 // -----------------------------------------------
